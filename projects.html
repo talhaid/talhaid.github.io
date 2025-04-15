@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - talhaid</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-      /* Animation keyframes */
-    @keyframes slideUp {
-      0% { opacity: 0; transform: translateY(40px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    
-    /* Animation classes */
-    .animate-slideUp { 
-      animation: slideUp 0.6s ease-out forwards; 
-    }
-    
-    .animate-fadeInUp {
-      animation: fadeInUp 0.5s ease-out forwards;
-    }
-    
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Talha İsmail Dilek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/tailwind.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-slideUp { animation: slideUp 0.6s ease-out forwards; }
+        .fade-in { opacity: 0; animation: fadeIn 0.5s ease forwards; }
+        .typing-effect::after {
+            content: '|';
+            animation: cursor 1s infinite step-end;
+        }
+        @keyframes cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        * {
+            transition-property: background-color, border-color, color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+        }
+        footer {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+    </style>
 </head>
-<body class="bg-[#1f1f1f] text-white">
+<body class="bg-[#0d0d0d] text-gray-100 min-h-screen flex flex-col">
 
-<!-- Navbar -->
-<nav class="border-b border-gray-800 w-full">
-  <div class="max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center">
+<!-- Professional Navigation -->
+<nav class="w-full text-sm py-4">
+  <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
 
-    <!-- Left: Logo -->
-    <a href="index.html" class="text-base font-semibold tracking-wide text-white">talhaid</a>
-
-    <!-- Center: Links (Sıkı hizalı, aynı boyutta) -->
-    <div class="hidden md:flex space-x-5 text-sm font-normal">
-      <a href="about.html" class="text-white/70 hover:text-white transition">About</a>
-      <a href="projects.html" class="text-white/70 hover:text-white transition">Projects</a>
-      <a href="skills.html" class="text-white/70 hover:text-white transition">Skills</a>
-      <a href="contact.html" class="text-white/70 hover:text-white transition">Contact</a>
+    <!-- Sol Logo -->
+    <div class="flex-1">
+      <a href="index.html" class="text-white text-[15px] tracking-wide" style="font-family: 'Ubuntu', sans-serif; font-weight: 400;">talhaid</a>
+      </a>
     </div>
 
-    <!-- Right: Social Icons -->
-<div class="flex items-center space-x-3">
-  <!-- GitHub -->
-  <a href="https://github.com/talhaid" target="_blank" class="text-white/70 hover:text-white transition" aria-label="GitHub">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.86 8.18 6.84 9.5.5.09.66-.23.66-.5v-1.69
-        c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6
-        1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34
-        -2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64
-        0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33
-        1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71
-        0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5
-        C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
-    </svg>
-  </a>
+    <!-- Orta Menü -->
+    <div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
+      <a href="about.html" class="text-white/70 hover:text-white transition">ABOUT</a>
+      <a href="projects.html" class="text-white/70 hover:text-white transition">PROJECTS</a>
+      <a href="skills.html" class="text-white/70 hover:text-white transition">SKILLS</a>
+      <a href="contact.html" class="text-white/70 hover:text-white transition">CONTACT</a>
+    </div>
 
-  <!-- LinkedIn -->
-  <a href="https://linkedin.com/in/talhaid" target="_blank" class="text-white/70 hover:text-white transition" aria-label="LinkedIn">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76
-      2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11
-      19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76
-      1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5
-      12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.77c1.4-2.59
-      7-2.78 7 2.48v6.75z"/>
-    </svg>
-  </a>
+    <!-- Sağ Sosyal İkonlar -->
+    <div class="flex-1 flex justify-end items-center space-x-4">
+      <a href="https://github.com/talhaid" target="_blank" class="text-white/70 hover:text-white transition" aria-label="GitHub">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
+               2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
+               c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47
+               -1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 
+               1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35
+               -1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 
+               0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 
+               0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33
+               .85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 
+               2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 
+               1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 
+               4.91.36.31.69.92.69 1.85V21c0 
+               .27.16.59.67.5C19.14 20.16 22 16.42 
+               22 12A10 10 0 0012 2z"/>
+        </svg>
+      </a>
 
-  <!-- Email -->
-  <a href="mailto:t.ismaildilek@gmail.com" class="text-white/70 hover:text-white transition" aria-label="Gmail">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1
-      0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8
-      5 8-5v2z"/>
-    </svg>
-  </a>
-</div>
+      <a href="https://linkedin.com/in/talhaid" target="_blank" class="text-white/70 hover:text-white transition" aria-label="LinkedIn">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 
+                   5v14c0 2.76 2.24 5 5 5h14c2.76 
+                   0 5-2.24 5-5v-14c0-2.76-2.24
+                   -5-5-5zm-11 19h-3v-11h3v11zm
+                   -1.5-12.27c-.97 0-1.75-.79
+                   -1.75-1.76s.78-1.76 1.75
+                   -1.76 1.75.79 1.75 1.76
+                   -.78 1.76-1.75 1.76zm13.5 
+                   12.27h-3v-5.6c0-3.37-4-3.11
+                   -4 0v5.6h-3v-11h3v1.77c1.4
+                   -2.59 7-2.78 7 2.48v6.75z"/>
+        </svg>
+      </a>
 
+      <a href="mailto:t.ismaildilek@gmail.com" class="text-white/70 hover:text-white transition" aria-label="Gmail">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+                   1.1.9 2 2 2h16c1.1 0 2-.9 
+                   2-2V6c0-1.1-.9-2-2-2zm0 
+                   4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+    </div>
 
   </div>
 </nav>
@@ -103,53 +120,88 @@
 
 
 <!-- Projects Section -->
-<main class="max-w-screen-xl mx-auto px-6 py-12">
-  <h1 class="text-3xl font-bold mb-10 text-center opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;"></h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  
-    <!-- Excel Data Analysis -->
-    <div class="bg-[#2a2a2a] p-6 rounded-xl shadow hover:scale-[1.02] transition opacity-0 animate-slideUp" style="animation-delay: 0.2s;">
-      <img src="assets/img/excel-analysis.jpg" alt="Excel Data Analysis" class="w-full h-40 object-cover rounded mb-4">
-      <h2 class="text-xl font-semibold mb-2">Excel Data Analysis</h2>
-      <p class="text-sm text-gray-300 mb-4">
-        Descriptive analysis using pivot tables, charts, and Excel formulas to uncover insights.
-      </p>
-      <a href="https://github.com/talhaid/excel-data-analysis" target="_blank" class="text-indigo-400 text-sm hover:underline">View on GitHub</a>
+<main class="relative z-10 flex-1">
+  <div class="max-w-screen-xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold mb-10 text-center opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;"></h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Excel Data Analysis -->
+      <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform" style="animation-delay: 0.2s;">
+        <div class="h-[75%] w-full">
+          <img src="assets/img/excel-analysis.jpg" alt="Excel Data Analysis" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+          <div>
+            <h2 class="text-base font-bold mb-1">Excel Data Analysis</h2>
+            <p class="text-sm text-gray-300">Descriptive analysis with pivot tables and charts.</p>
+          </div>
+          <div class="flex justify-end">
+            <a href="https://github.com/talhaid/excel-data-analysis" target="_blank" class="text-indigo-400 text-xs hover:underline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Data Cleaning -->
+      <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform" style="animation-delay: 0.3s;">
+        <div class="h-[75%] w-full">
+          <img src="assets/img/sql-cleaning.jpg" alt="SQL Data Cleaning" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+          <div>
+            <h2 class="text-base font-bold mb-1">SQL Data Cleaning</h2>
+            <p class="text-sm text-gray-300">Cleaning NULLs, fixing formats and duplicates.</p>
+          </div>
+          <div class="flex justify-end">
+            <a href="https://github.com/talhaid/sql-data-cleaning" target="_blank" class="text-indigo-400 text-xs hover:underline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Exploratory Data Analysis -->
+      <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform" style="animation-delay: 0.4s;">
+        <div class="h-[75%] w-full">
+          <img src="assets/img/sql-eda.jpg" alt="SQL Exploratory Data Analysis" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+          <div>
+            <h2 class="text-base font-bold mb-1">SQL Exploratory Data Analysis</h2>
+            <p class="text-sm text-gray-300">GROUP BY, aggregations and trends on structured data.</p>
+          </div>
+          <div class="flex justify-end">
+            <a href="https://github.com/talhaid/sql-eda" target="_blank" class="text-indigo-400 text-xs hover:underline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Airbnb Dashboard in Tableau -->
+      <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform" style="animation-delay: 0.5s;">
+        <div class="h-[75%] w-full">
+          <img src="assets/img/tableau-airbnb.jpg" alt="Airbnb Dashboard in Tableau" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+          <div>
+            <h2 class="text-base font-bold mb-1">Airbnb Dashboard in Tableau</h2>
+            <p class="text-sm text-gray-300">Analyzing listings by location, price and availability.</p>
+          </div>
+          <div class="flex justify-end">
+            <a href="https://github.com/talhaid/tableau-airbnb-dashboard" target="_blank" class="text-indigo-400 text-xs hover:underline">View Project →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  
-    <!-- SQL Data Cleaning -->
-    <div class="bg-[#2a2a2a] p-6 rounded-xl shadow hover:scale-[1.02] transition opacity-0 animate-slideUp" style="animation-delay: 0.3s;">
-      <img src="assets/img/sql-cleaning.jpg" alt="SQL Data Cleaning" class="w-full h-40 object-cover rounded mb-4">
-      <h2 class="text-xl font-semibold mb-2">SQL Data Cleaning</h2>
-      <p class="text-sm text-gray-300 mb-4">
-        Cleaning messy data using SQL: fixing NULLs, formatting issues, and duplicates to prepare clean datasets.
-      </p>
-      <a href="https://github.com/talhaid/sql-data-cleaning" target="_blank" class="text-indigo-400 text-sm hover:underline">View on GitHub</a>
-    </div>
-  
-    <!-- SQL EDA -->
-    <div class="bg-[#2a2a2a] p-6 rounded-xl shadow hover:scale-[1.02] transition opacity-0 animate-slideUp" style="animation-delay: 0.4s;">
-      <img src="assets/img/sql-eda.jpg" alt="SQL Exploratory Data Analysis" class="w-full h-40 object-cover rounded mb-4">
-      <h2 class="text-xl font-semibold mb-2">SQL Exploratory Data Analysis</h2>
-      <p class="text-sm text-gray-300 mb-4">
-        Exploring trends and insights using SQL GROUP BY, aggregations and filtering queries on structured data.
-      </p>
-      <a href="https://github.com/talhaid/sql-eda" target="_blank" class="text-indigo-400 text-sm hover:underline">View on GitHub</a>
-    </div>
-  
-    <!-- Tableau Airbnb Dashboard -->
-    <div class="bg-[#2a2a2a] p-6 rounded-xl shadow hover:scale-[1.02] transition opacity-0 animate-slideUp" style="animation-delay: 0.5s;">
-      <img src="assets/img/tableau-airbnb.jpg" alt="Airbnb Tableau Project" class="w-full h-40 object-cover rounded mb-4">
-      <h2 class="text-xl font-semibold mb-2">Airbnb Dashboard in Tableau</h2>
-      <p class="text-sm text-gray-300 mb-4">
-        An interactive dashboard built in Tableau to analyze Airbnb listings based on location, pricing and availability.
-      </p>
-      <a href="https://github.com/talhaid/tableau-airbnb-dashboard" target="_blank" class="text-indigo-400 text-sm hover:underline">View on GitHub</a>
-    </div>
-  
   </div>
-  
 </main>
+
+
+<!-- Footer -->
+<script>
+    fetch('src/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
 <!-- Page transition script -->
 <script>
