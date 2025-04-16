@@ -102,6 +102,17 @@
   
     </div>
   </nav>
+
+  <!-- index.html, </nav> hemen altına ekle -->
+<script>
+    document.querySelectorAll('nav .max-w-screen-xl a').forEach(link => {
+      link.addEventListener('click', () => {
+        // Diğer sayfada animasyon tetiklesin
+        sessionStorage.setItem('fromIndex', 'true');
+      });
+    });
+  </script>
+  
       
 
     <main class="flex-1 flex flex-col justify-center min-h-screen">
