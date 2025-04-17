@@ -16,8 +16,11 @@
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(40px); }
+        
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(60px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
             100% { opacity: 1; transform: translateY(0); }
         }
         .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
@@ -39,7 +42,16 @@
             padding-top: 0.5rem !important;
             padding-bottom: 0.5rem !important;
         }
-    </style>
+    
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-slideDown {
+  animation: slideDown 0.6s ease-out forwards;
+}
+</style>
 </head>
 <body class="bg-[#0d0d0d] text-gray-100 min-h-screen flex flex-col">
 <!-- Professional Navigation -->
@@ -48,10 +60,9 @@
 <!-- Sol Logo -->
 <div class="flex-1">
 <a class="text-white text-[15px] tracking-wide" href="index.html" style="font-family: 'Ubuntu', sans-serif; font-weight: 400;">talhaid</a>
-
 </div>
 <!-- Orta Menü -->
-<div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
+<div class="hidden md:flex space-x-6 text-xs font-normal justify-center" id="center-menu">
 <a class="text-white/70 hover:text-white transition" href="about.html">ABOUT</a>
 <a class="text-white/70 hover:text-white transition" href="projects.html">PROJECTS</a>
 <a class="text-white/70 hover:text-white transition" href="skills.html">SKILLS</a>
@@ -105,46 +116,106 @@
 </nav>
 <!-- Skills Section -->
 <main class="max-w-screen-xl mx-auto px-6 py-16 mt-20">
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 place-items-center">
 <!-- SQL -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 0.2s;">
-<img alt="SQL" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/sql.png"/>
-<span class="text-xl text-white font-medium">SQL</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.0s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 0.0s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="SQL" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/sql.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">SQL</span>
+</div>
 </div>
 <!-- Excel -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 0.4s;">
-<img alt="Excel" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/excel.png"/>
-<span class="text-xl text-white font-medium">EXCEL</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.0s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 0.2s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Excel" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/excel.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
 </div>
-<!-- Tableau -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 0.6s;">
-<img alt="Tableau" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/tableau.png"/>
-<span class="text-xl text-white font-medium">TABLEAU</span>
+<span class="mt-3 text-neutral-300 font-medium">EXCEL</span>
 </div>
-<!-- Power BI -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 0.8s;">
-<img alt="Power BI" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/powerbi.png"/>
-<span class="text-xl text-white font-medium">POWER BI</span>
 </div>
 <!-- Python -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 1.0s;">
-<img alt="Python" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/python.png"/>
-<span class="text-xl text-white font-medium">PYTHON</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.0s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 0.4s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Python" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/python.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">PYTHON</span>
+</div>
+</div>
+<!-- Tableau -->
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.0s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 0.6s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Tableau" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/tableau.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">TABLEAU</span>
+</div>
+</div>
+<!-- Power BI -->
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.0s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 0.8s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Power BI" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/powerbi.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">POWER BI</span>
+</div>
+</div>
+<!-- Java -->
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.2s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 1.0s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Java" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/java.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">JAVA</span>
+</div>
 </div>
 <!-- Git -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 1.2s;">
-<img alt="Git" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/git.png"/>
-<span class="text-xl text-white font-medium">GIT</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.2s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 1.2s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Git" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/git.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">GIT</span>
+</div>
+</div>
+<!-- Docker -->
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.2s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 1.4s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Docker" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/docker.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">DOCKER</span>
+</div>
 </div>
 <!-- Azure -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 1.4s;">
-<img alt="Azure" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/azure.png"/>
-<span class="text-xl text-white font-medium">AZURE</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.2s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 1.6s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="Azure" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/azure.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">AZURE</span>
+</div>
 </div>
 <!-- AWS -->
-<div class="flex flex-col items-center opacity-0 animate-slideUp transition-all duration-300 hover:scale-110 hover:shadow-lg transform" style="animation-delay: 1.6s;">
-<img alt="AWS" class="w-40 h-40 rounded-xl object-cover mb-4 shadow-md" src="assets/img/aws.png"/>
-<span class="text-xl text-white font-medium">AWS</span>
+<div class="transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-slideUp" style="animation-delay: 0.2s; animation-duration: 0.6s;">
+<div class="group relative flex flex-col items-center transition-all duration-500 hover:scale-105" style="animation-delay: 1.8s; animation-duration: 0.9s;">
+<div class="relative w-40 h-40 rounded-xl overflow-hidden">
+<img alt="AWS" class="w-full h-full object-cover transition duration-500 group-hover:brightness-110 rounded-xl" src="assets/img/aws.png"/>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+</div>
+<span class="mt-3 text-neutral-300 font-medium">AWS</span>
+</div>
 </div>
 </div>
 </main>

@@ -45,17 +45,7 @@
             padding-bottom: 0.5rem !important;
         }
 
-        /* --- YENİ EKLENECEK BAŞLANGICI --- */
-
-/* Orta menüye aşağıdan gelme animasyonu */
-@keyframes slideDown {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.animate-slideDown {
-  animation: slideDown 0.6s ease-out forwards;
-}
-/* --- YENİ EKLENECEK BİTİŞİ --- */
+        
 
     </style>
 </head>
@@ -68,15 +58,12 @@
 <a class="text-white text-[15px] tracking-wide" href="index.html" style="font-family: 'Ubuntu', sans-serif; font-weight: 400;">talhaid</a>
 </div>
 <!-- Orta Menü -->
-<div class="hidden md:flex space-x-6 text-xs font-normal justify-center
-            opacity-0 animate-slideDown"
-     style="animation-delay: 0.2s;">
-  <a href="about.html" class="hover:text-white transition">ABOUT</a>
-  <a href="projects.html" class="hover:text-white transition">PROJECTS</a>
-  <a href="skills.html" class="hover:text-white transition">SKILLS</a>
-  <a href="contact.html" class="hover:text-white transition">CONTACT</a>
+<div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
+<a class="hover:text-white transition" href="about.html">ABOUT</a>
+<a class="hover:text-white transition" href="projects.html">PROJECTS</a>
+<a class="hover:text-white transition" href="skills.html">SKILLS</a>
+<a class="hover:text-white transition" href="contact.html">CONTACT</a>
 </div>
-
 <!-- Sağ Sosyal İkonlar -->
 <div class="flex-1 flex justify-end items-center space-x-4">
 <a aria-label="GitHub" class="text-white/70 hover:text-white transition" href="https://github.com/talhaid" target="_blank">
@@ -133,13 +120,13 @@
 <div class="h-[75%] w-full">
 <img alt="Excel Data Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/img/excel-analysis.jpg"/>
 </div>
-<div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+<div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
 <div>
-<h2 class="text-base font-bold mb-1 group-hover:text-indigo-400 transition">Excel Data Analysis</h2>
-<p class="text-sm text-gray-300">Descriptive analysis with pivot tables and charts.</p>
+<h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">Excel Data Analysis</h2>
+<p class="text-sm text-neutral-400">Descriptive analysis with pivot tables and charts.</p>
 </div>
 <div class="flex justify-end">
-<span class="text-indigo-400 text-xs group-hover:underline">View Project →</span>
+<span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">View Project →</span>
 </div>
 </div>
 </div></a>
@@ -148,13 +135,13 @@
 <div class="h-[75%] w-full">
 <img alt="SQL Data Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/img/sql-cleaning.jpg"/>
 </div>
-<div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+<div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
 <div>
-<h2 class="text-base font-bold mb-1 group-hover:text-indigo-400 transition">SQL Data Cleaning</h2>
-<p class="text-sm text-gray-300">Cleaning NULLs, fixing formats and duplicates.</p>
+<h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">SQL Data Cleaning</h2>
+<p class="text-sm text-neutral-400">Cleaning NULLs, fixing formats and duplicates.</p>
 </div>
 <div class="flex justify-end">
-<span class="text-indigo-400 text-xs group-hover:underline">View Project →</span>
+<span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">View Project →</span>
 </div>
 </div>
 </div></a>
@@ -163,13 +150,13 @@
 <div class="h-[75%] w-full">
 <img alt="SQL Exploratory Data Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/img/sql-eda.jpg"/>
 </div>
-<div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+<div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
 <div>
-<h2 class="text-base font-bold mb-1 group-hover:text-indigo-400 transition">SQL Exploratory Data Analysis</h2>
-<p class="text-sm text-gray-300">GROUP BY, aggregations and trends on structured data.</p>
+<h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">SQL Exploratory Data Analysis</h2>
+<p class="text-sm text-neutral-400">GROUP BY, aggregations and trends on structured data.</p>
 </div>
 <div class="flex justify-end">
-<span class="text-indigo-400 text-xs group-hover:underline">View Project →</span>
+<span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">View Project →</span>
 </div>
 </div>
 </div></a>
@@ -178,13 +165,13 @@
 <div class="h-[75%] w-full">
 <img alt="Airbnb Dashboard in Tableau" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/img/tableau-airbnb.jpg"/>
 </div>
-<div class="bg-[#121212] p-3 h-[25%] flex flex-col justify-between">
+<div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
 <div>
-<h2 class="text-base font-bold mb-1 group-hover:text-indigo-400 transition">Airbnb Dashboard in Tableau</h2>
-<p class="text-sm text-gray-300">Analyzing listings by location, price and availability.</p>
+<h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">Airbnb Dashboard in Tableau</h2>
+<p class="text-sm text-neutral-400">Analyzing listings by location, price and availability.</p>
 </div>
 <div class="flex justify-end">
-<span class="text-indigo-400 text-xs group-hover:underline">View Project →</span>
+<span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">View Project →</span>
 </div>
 </div>
 </div></a>
@@ -192,17 +179,7 @@
 </div>
 </main>
 <!-- Footer -->
-<script>
-    fetch('src/components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data);
-        });
-</script>
 <!-- Page transition script -->
-<script>
-  window.addEventListener('DOMContentLoaded', () => document.body.classList.add('fade-in'));
-</script>
 <footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
   © 2025 Talha İsmail Dilek. All rights reserved.
 </footer>
