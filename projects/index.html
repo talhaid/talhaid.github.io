@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="preload"/><link as="script" href="https://cdn.tailwindcss.com" rel="preload"/>
+<head><link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="preload"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio | Talha İsmail Dilek</title>
+<title>Projects | Talha İsmail Dilek</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -18,8 +18,13 @@
             0% { opacity: 0; transform: translateY(40px); }
             100% { opacity: 1; transform: translateY(0); }
         }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
         .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
         .animate-slideUp { animation: slideUp 0.6s ease-out forwards; }
+        .fade-in { opacity: 0; animation: fadeIn 0.5s ease forwards; }
         .typing-effect::after {
             content: '|';
             animation: cursor 1s infinite step-end;
@@ -33,27 +38,39 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 300ms;
         }
-    </style>
+
+        
+
+    
+footer {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}</style>
 <meta name="description" content="Portfolio of a data-focused Information Systems Engineering student." />
 <link rel="icon" href="assets/img/favicon.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
-<meta property="og:title" content="Portfolio | Talha İsmail Dilek" />
+<meta property="og:title" content="Projects | Talha İsmail Dilek" />
 <meta property="og:description" content="Portfolio of a data-focused Information Systems Engineering student." />
 <!-- <meta property="og:image" content="..." /> -->
-<meta property="og:url" content="https://talhaid.me/" />
+<meta property="og:url" content="https://talhaid.me/projects" />
 <!-- <meta name="twitter:image" content="..." /> -->
 <meta name="theme-color" content="#0d0d0d" />
 <link rel="manifest" href="/manifest.json" />
 </head>
-<body class="bg-[#0d0d0d] text-neutral-300 min-h-screen flex flex-col">
-
-
+<body class="bg-[#0d0d0d] text-gray-100 min-h-screen flex flex-col">
 <!-- Professional Navigation -->
 <header role="banner"><nav class="w-full text-sm py-4">
 <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
 <!-- Sol Logo -->
 <div class="flex-1">
 <a class="text-neutral-300 text-[15px] tracking-wide" href="/" style="font-family: 'Inter', sans-serif;">talhaid</a>
+</div>
+<!-- Orta Menü -->
+<div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
+<a class="text-white/70 hover:text-white transition" href="/about/">ABOUT</a>
+<a href="/projects/" class="text-white underline underline-offset-4" aria-current="page">PROJECTS</a>
+<a class="text-white/70 hover:text-white transition" href="/skills/">SKILLS</a>
+<a class="text-white/70 hover:text-white transition" href="/contact/">CONTACT</a>
 </div>
 <!-- Sağ Sosyal İkonlar -->
 <div class="hidden md:flex flex-1 justify-end items-center space-x-4">
@@ -191,64 +208,161 @@
 </div>
 </nav>
 </header>
-<main class="flex-1 flex flex-col justify-center min-h-screen" id="main" role="main">
-<!-- Hero Section -->
-<section class="flex flex-col items-center justify-center pt-28 pb-10">
-<div class="max-w-screen-md mx-auto px-6 py-4 flex flex-col items-center text-center space-y-3"> <h1 class="text-4xl md:text-5xl font-bold mb-2 opacity-0 animate-fadeInUp text-neutral-300" style="animation-delay: 0.2s;">Talha İsmail Dilek</h1>
-<h2 class="text-xl md:text-2xl text-neutral-300 mb-2 font-light tracking-wide opacity-0 animate-fadeInUp typing-effect" id="typewriter" style="animation-delay: 0.4s;"></h2>
-<p class="max-w-xl text-lg text-neutral-300 mb-2 font-light tracking-wide leading-relaxed opacity-0 animate-fadeInUp" style="animation-delay: 0.6s;">
-                    3rd-year student in Information Systems Engineering. Focused on data analysis, artificial intelligence, 
-                    distributed systems.
-                </p>
-</div>
-</section>
+<!-- Projects Section -->
+<main class="relative z-10 flex-1" id="main" role="main">
+<div class="max-w-screen-xl mx-auto px-6 py-12">
+<h1 class="text-2xl font-bold mb-10 text-center text-white/90 opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;">
+  SELECTED WORKS
+</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Excel Data Analysis -->
+<a class="group" href="https://github.com/talhaid/excel-data-analysis" target="_blank">
+  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.2s;">
 
-<!-- Navigation Boxes -->
-<section class="mt-auto mb-4"> <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-700 gap-0 p-0">
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/about/" style="animation-delay: 0.8s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">About</span>
+    <!-- Görsel -->
+    <div class="h-[75%] w-full">
+      <img
+        alt="Excel Data Analysis"
+        src="../assets/img/excel-analysis.webp"
+        width="400"
+        height="260"
+        loading="lazy"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <!-- İçerik -->
+    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+      <div>
+        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+          Excel Data Analysis
+        </h2>
+        <p class="text-sm text-neutral-400">
+          Descriptive analysis with pivot tables and charts.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+          View Project →
+        </span>
+      </div>
+    </div>
+
+  </div>
 </a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/projects/" style="animation-delay: 1.0s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Projects</span>
+<!-- SQL Data Cleaning -->
+<a class="group" href="https://github.com/talhaid/sql-data-cleaning" target="_blank">
+  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.4s;">
+
+    <!-- Görsel -->
+    <div class="h-[75%] w-full">
+      <img
+        alt="SQL Data Cleaning"
+        src="../assets/img/sql-cleaning.webp"
+        width="400"
+        height="260"
+        loading="lazy"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <!-- İçerik -->
+    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+      <div>
+        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+          SQL Data Cleaning
+        </h2>
+        <p class="text-sm text-neutral-400">
+          Cleaning NULLs, fixing formats and duplicates.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+          View Project →
+        </span>
+      </div>
+    </div>
+
+  </div>
 </a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/skills/" style="animation-delay: 1.2s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Skills</span>
+<!-- SQL Exploratory Data Analysis -->
+<a class="group" href="https://github.com/talhaid/sql-eda" target="_blank">
+  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.6s;">
+
+    <!-- Görsel -->
+    <div class="h-[75%] w-full">
+      <img
+        alt="SQL Exploratory Data Analysis"
+        src="../assets/img/sql-eda.webp"
+        width="400"
+        height="260"
+        loading="lazy"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <!-- Açıklama -->
+    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+      <div>
+        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+          SQL Exploratory Data Analysis
+        </h2>
+        <p class="text-sm text-neutral-400">
+          GROUP BY, aggregations and trends on structured data.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">View Project →</span>
+      </div>
+    </div>
+
+  </div>
 </a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/contact/" style="animation-delay: 1.4s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Contact</span>
+
+</a>
+<!-- Airbnb Dashboard in Tableau -->
+<a class="group" href="https://github.com/talhaid/tableau-airbnb-dashboard" target="_blank">
+  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+
+    <!-- Görsel -->
+    <div class="h-[75%] w-full">
+      <img
+        alt="Airbnb Dashboard in Tableau"
+        src="../assets/img/tableau-airbnb.webp"
+        width="400"
+        height="260"
+        loading="lazy"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <!-- Açıklama -->
+    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+      <div>
+        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+          Airbnb Dashboard in Tableau
+        </h2>
+        <p class="text-sm text-neutral-400">
+          Analyzing listings by location, price and availability.
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+          View Project →
+        </span>
+      </div>
+    </div>
+
+  </div>
 </a>
 </div>
-</section>
+</div>
 </main>
 <!-- Footer -->
-<!-- Typing effect --> <script>
-      window.addEventListener('load', function () {
-        // Typing effect
-        setTimeout(() => {
-            const typewriterElement = document.getElementById('typewriter');
-            const text = "Information Systems Engineering Student";
-            let charIndex = 0;
-
-            function typeWriter() {
-                if (charIndex < text.length) {
-                    typewriterElement.textContent += text.charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typeWriter, 45);
-                } else {
-                    // Remove the typing-effect class when typing is complete
-                    typewriterElement.classList.remove('typing-effect');
-                }
-            }
-
-            setTimeout(typeWriter, 500);
-        }, 400);
-      });
-    </script>
-
-    <script>
+<!-- Page transition script -->
+<footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
+  © 2025 Talha İsmail Dilek. All rights reserved.
+</footer>
+<script>
   const menu = document.getElementById('mobile-menu');
   const openBtn = document.getElementById('hamburger-btn');
-  const closeBtn = document.getElementById('menu-close-btn');
+  const closeBtn = document.getElementById('menu-close-btn'); 
 
   function toggleMenu() {
     if (menu.classList.contains('hidden')) {
@@ -265,7 +379,7 @@
   }
 
   openBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu); 
 </script>
 </body>
 </html>
