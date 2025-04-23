@@ -215,7 +215,11 @@
 </ul>
 </div>
 <!-- Right Side: Form -->
+ <div id="success-message" class="hidden bg-green-600 text-white p-3 rounded mb-6 text-center">
+  ✅ Your message has been sent successfully!
+</div>
 <form action="https://formsubmit.co/t.ismaildilek@gmail.com" class="space-y-4 opacity-0 animate-slideUp" method="POST" style="animation-delay: 0.3s;">
+  <input type="hidden" name="_next" value="https://talhaid.me/contact/?success=true">
 <div>
 <label class="block text-sm mb-1 text-gray-300" for="name">Name</label>
 <input class="w-full p-2 rounded bg-[#2a2a2a] border border-gray-600 text-white focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="name" name="name" required="" type="text"/>
@@ -237,6 +241,7 @@
 <footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
   © 2025 Talha İsmail Dilek. All rights reserved.
 </footer>
+
 <script>
   const menu = document.getElementById('mobile-menu');
   const openBtn = document.getElementById('hamburger-btn');
@@ -258,6 +263,18 @@
 
   openBtn.addEventListener('click', toggleMenu);
   closeBtn.addEventListener('click', toggleMenu); 
+  
+  // Form submit success message
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('success') === 'true') {
+    const msg = document.getElementById('success-message');
+    msg.classList.remove('hidden');
+
+    // 5 saniye sonra gizle
+    setTimeout(() => {
+      msg.classList.add('hidden');
+    }, 5000);
+  }
 </script>
 </body>
 </html>
