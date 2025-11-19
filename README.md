@@ -1,7 +1,7 @@
 # talhaid.me – Personal Portfolio Website
 
 Welcome to my personal portfolio website.
-I’m a third-year Information Systems Engineering student focused on analytics, data science, distributed systems, and AI/ML.
+I’m a fourth-year Information Systems Engineering student focused on analytics, data science, distributed systems, and AI/ML.
 
 This website showcases my projects, skills, and contact information.
 

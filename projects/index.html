@@ -1,82 +1,135 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="preload"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Projects | Talha İsmail Dilek</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<style>
-        body { font-family: 'Inter', sans-serif; }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
-        .animate-slideUp { animation: slideUp 0.6s ease-out forwards; }
-        .fade-in { opacity: 0; animation: fadeIn 0.5s ease forwards; }
-        .typing-effect::after {
-            content: '|';
-            animation: cursor 1s infinite step-end;
-        }
-        @keyframes cursor {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-        * {
-            transition-property: background-color, border-color, color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 300ms;
-        }
 
-        
+<head>
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap"
+    rel="preload" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Projects | Talha İsmail Dilek</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
 
-    
-footer {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}</style>
-<meta name="description" content="Portfolio of a data-focused Information Systems Engineering student." />
-<link rel="icon" href="assets/img/favicon.ico" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
-<meta property="og:title" content="Projects | Talha İsmail Dilek" />
-<meta property="og:description" content="Portfolio of a data-focused Information Systems Engineering student." />
-<!-- <meta property="og:image" content="..." /> -->
-<meta property="og:url" content="https://talhaid.me/projects" />
-<!-- <meta name="twitter:image" content="..." /> -->
-<meta name="theme-color" content="#0d0d0d" />
-<link rel="manifest" href="/manifest.json" />
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-slideUp {
+      animation: slideUp 0.6s ease-out forwards;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    .typing-effect::after {
+      content: '|';
+      animation: cursor 1s infinite step-end;
+    }
+
+    @keyframes cursor {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    * {
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
+
+
+
+
+    footer {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+  </style>
+  <meta name="description" content="Portfolio of a data-focused Information Systems Engineering student." />
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
+  <meta property="og:title" content="Projects | Talha İsmail Dilek" />
+  <meta property="og:description" content="Portfolio of a data-focused Information Systems Engineering student." />
+  <!-- <meta property="og:image" content="..." /> -->
+  <meta property="og:url" content="https://talhaid.me/projects" />
+  <!-- <meta name="twitter:image" content="..." /> -->
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="manifest" href="/manifest.json" />
 </head>
+
 <body class="bg-[#0d0d0d] text-gray-100 min-h-screen flex flex-col">
-<!-- Professional Navigation -->
-<header role="banner"><nav class="w-full text-sm py-4">
-<div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
-<!-- Sol Logo -->
-<div class="flex-1">
-<a class="text-neutral-300 text-[15px] tracking-wide" href="/" style="font-family: 'Inter', sans-serif;">talhaid</a>
-</div>
-<!-- Orta Menü -->
-<div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
-<a class="text-white/70 hover:text-white transition" href="/about/">ABOUT</a>
-<a href="/projects/" class="text-white underline underline-offset-4" aria-current="page">PROJECTS</a>
-<a class="text-white/70 hover:text-white transition" href="/skills/">SKILLS</a>
-<a class="text-white/70 hover:text-white transition" href="/contact/">CONTACT</a>
-</div>
-<!-- Sağ Sosyal İkonlar -->
-<div class="hidden md:flex flex-1 justify-end items-center space-x-4">
-<a aria-label="GitHub" class="text-white/70 hover:text-white transition" href="https://github.com/talhaid" target="_blank">
-<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
-<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
+  <!-- Professional Navigation -->
+  <header role="banner">
+    <nav class="w-full text-sm py-4">
+      <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+        <!-- Sol Logo -->
+        <div class="flex-1">
+          <a class="text-neutral-300 text-[15px] tracking-wide" href="/"
+            style="font-family: 'Inter', sans-serif;">talhaid</a>
+        </div>
+        <!-- Orta Menü -->
+        <div class="hidden md:flex space-x-6 text-xs font-normal justify-center">
+          <a class="text-white/70 hover:text-white transition" href="/about/">ABOUT</a>
+          <a href="/projects/" class="text-white underline underline-offset-4" aria-current="page">PROJECTS</a>
+          <a class="text-white/70 hover:text-white transition" href="/skills/">SKILLS</a>
+          <a class="text-white/70 hover:text-white transition" href="/contact/">CONTACT</a>
+        </div>
+        <!-- Sağ Sosyal İkonlar -->
+        <div class="hidden md:flex flex-1 justify-end items-center space-x-4">
+          <a aria-label="GitHub" class="text-white/70 hover:text-white transition" href="https://github.com/talhaid"
+            target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+              <path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
                  2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
                  c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47
                  -1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 
@@ -90,11 +143,12 @@ footer {
                  4.91.36.31.69.92.69 1.85V21c0 
                  .27.16.59.67.5C19.14 20.16 22 16.42 
                  22 12A10 10 0 0012 2z" fill-rule="evenodd"></path>
-</svg>
-</a>
-<a aria-label="LinkedIn" class="text-white/70 hover:text-white transition" href="https://linkedin.com/in/talhaid" target="_blank">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-<path d="M19 0h-14c-2.76 0-5 2.24-5 
+            </svg>
+          </a>
+          <a aria-label="LinkedIn" class="text-white/70 hover:text-white transition"
+            href="https://linkedin.com/in/talhaid" target="_blank">
+            <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+              <path d="M19 0h-14c-2.76 0-5 2.24-5 
                      5v14c0 2.76 2.24 5 5 5h14c2.76 
                      0 5-2.24 5-5v-14c0-2.76-2.24
                      -5-5-5zm-11 19h-3v-11h3v11zm
@@ -105,58 +159,58 @@ footer {
                      12.27h-3v-5.6c0-3.37-4-3.11
                      -4 0v5.6h-3v-11h3v1.77c1.4
                      -2.59 7-2.78 7 2.48v6.75z"></path>
-</svg>
-</a>
-<a aria-label="Gmail" class="text-white/70 hover:text-white transition" href="mailto:t.ismaildilek@gmail.com">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+            </svg>
+          </a>
+          <a aria-label="Gmail" class="text-white/70 hover:text-white transition" href="mailto:t.ismaildilek@gmail.com">
+            <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
                      1.1.9 2 2 2h16c1.1 0 2-.9 
                      2-2V6c0-1.1-.9-2-2-2zm0 
                      4l-8 5-8-5V6l8 5 8-5v2z"></path>
-</svg>
-</a>
-</div>
+            </svg>
+          </a>
+        </div>
 
- <div class="md:hidden">
+        <div class="md:hidden">
 
-      <!-- Sağ: Hamburger Menü (mobilde) -->
-      <button id="hamburger-btn" class="md:hidden text-white p-1 hover:bg-white/10 rounded transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-</div>
-
-
-<!-- Slide-in Menü (mobil) -->
-<div id="mobile-menu"
-  class="fixed top-0 right-0 h-full w-1/2 max-w-xs bg-[#0d0d0d]/90 backdrop-blur-md z-40 hidden flex flex-col pt-4 space-y-6 text-sm uppercase transition-transform duration-300 translate-x-full shadow-lg">
+          <!-- Sağ: Hamburger Menü (mobilde) -->
+          <button id="hamburger-btn" class="md:hidden text-white p-1 hover:bg-white/10 rounded transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
 
 
-  <!-- Menü içi sol üst ☰ (kapatma butonu) -->
-  <div class="flex items-center pl-2">
-    <button id="menu-close-btn" class="text-white p-1 hover:bg-white/10 rounded transition">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
+        <!-- Slide-in Menü (mobil) -->
+        <div id="mobile-menu"
+          class="fixed top-0 right-0 h-full w-1/2 max-w-xs bg-[#0d0d0d]/90 backdrop-blur-md z-40 hidden flex flex-col pt-4 space-y-6 text-sm uppercase transition-transform duration-300 translate-x-full shadow-lg">
 
-  <!-- Menü Linkleri -->
-   <div class="flex flex-col space-y-4">
-    <a href="/about/" class="pl-3 hover:text-white transition">About</a>
-    <a href="/projects/" class="pl-3 hover:text-white transition">Projects</a>
-    <a href="/skills/" class="pl-3 hover:text-white transition">Skills</a>
-    <a href="/contact/" class="pl-3 hover:text-white transition">Contact</a>
-  </div>
 
-<!-- Sosyal ikonlar - sola hizalı, yatay (yan yana) -->
-<div class="flex justify-start items-center space-x-4 pl-3 mt-6">
-  <!-- GitHub -->
-  <a href="https://github.com/talhaid" target="_blank" aria-label="GitHub" class="text-white/70 hover:text-white transition">
-    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
+          <!-- Menü içi sol üst ☰ (kapatma butonu) -->
+          <div class="flex items-center pl-2">
+            <button id="menu-close-btn" class="text-white p-1 hover:bg-white/10 rounded transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menü Linkleri -->
+          <div class="flex flex-col space-y-4">
+            <a href="/about/" class="pl-3 hover:text-white transition">About</a>
+            <a href="/projects/" class="pl-3 hover:text-white transition">Projects</a>
+            <a href="/skills/" class="pl-3 hover:text-white transition">Skills</a>
+            <a href="/contact/" class="pl-3 hover:text-white transition">Contact</a>
+          </div>
+
+          <!-- Sosyal ikonlar - sola hizalı, yatay (yan yana) -->
+          <div class="flex justify-start items-center space-x-4 pl-3 mt-6">
+            <!-- GitHub -->
+            <a href="https://github.com/talhaid" target="_blank" aria-label="GitHub"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
         2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
         c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47
         -1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 
@@ -170,14 +224,14 @@ footer {
         4.91.36.31.69.92.69 1.85V21c0 
         .27.16.59.67.5C19.14 20.16 22 16.42 
         22 12A10 10 0 0012 2z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-  <!-- LinkedIn -->
-  <a href="https://linkedin.com/in/talhaid" target="_blank" aria-label="LinkedIn" class="text-white/70 hover:text-white transition">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path
-        d="M19 0h-14c-2.76 0-5 2.24-5 
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/talhaid" target="_blank" aria-label="LinkedIn"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 
         5v14c0 2.76 2.24 5 5 5h14c2.76 
         0 5-2.24 5-5v-14c0-2.76-2.24
         -5-5-5zm-11 19h-3v-11h3v11zm
@@ -188,337 +242,322 @@ footer {
         12.27h-3v-5.6c0-3.37-4-3.11
         -4 0v5.6h-3v-11h3v1.77c1.4
         -2.59 7-2.78 7 2.48v6.75z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-  <!-- Gmail -->
-  <a href="mailto:t.ismaildilek@gmail.com" aria-label="Mail" class="text-white/70 hover:text-white transition">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path
-        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+            <!-- Gmail -->
+            <a href="mailto:t.ismaildilek@gmail.com" aria-label="Mail"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
         1.1.9 2 2 2h16c1.1 0 2-.9 
         2-2V6c0-1.1-.9-2-2-2zm0 
         4l-8 5-8-5V6l8 5 8-5v2z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-</div>
-</div>
-</div>
-</div>
-</nav>
-</header>
-<!-- Projects Section -->
-<main class="relative z-10 flex-1" id="main" role="main">
-<div class="max-w-screen-xl mx-auto px-6 py-12">
-<h1 class="text-2xl font-bold mb-10 text-center text-white/90 opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;">
-  SELECTED WORKS
-</h1>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Excel Data Analysis -->
-<a class="group" href="https://github.com/talhaid/excel-data-analysis" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.2s;">
-
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Excel Data Analysis"
-        src="../assets/img/excel-analysis.webp"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
-
-    <!-- İçerik -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Excel Data Analysis
-        </h2>
-        <p class="text-sm text-neutral-400">
-          Descriptive analysis with pivot tables and charts.
-        </p>
+          </div>
+        </div>
       </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        </span>
       </div>
-    </div>
+    </nav>
+  </header>
+  <!-- Projects Section -->
+  <main class="relative z-10 flex-1" id="main" role="main">
+    <div class="max-w-screen-xl mx-auto px-6 py-12">
+      <h1 class="text-2xl font-bold mb-10 text-center text-white/90 opacity-0 animate-fadeInUp"
+        style="animation-delay: 0.1s;">
+        SELECTED WORKS
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Excel Data Analysis -->
+        <a class="group" href="https://github.com/talhaid/excel-data-analysis" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.2s;">
 
-  </div>
-</a>
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Excel Data Analysis" src="../assets/img/excel-analysis.webp" width="400" height="260"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-<!-- SQL Exploratory Data Analysis -->
-<a class="group" href="https://github.com/talhaid/sql-exploratory-data-analysis" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.6s;">
+            <!-- İçerik -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Excel Data Analysis
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  Descriptive analysis with pivot tables and charts.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+                </span>
+              </div>
+            </div>
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="SQL Exploratory Data Analysis"
-        src="../assets/img/sql-eda.webp"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+          </div>
+        </a>
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          SQL Exploratory Data Analysis
-        </h2>
-        <p class="text-sm text-neutral-400">
-          GROUP BY, aggregations and trends on structured data.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline"></span>
-      </div>
-    </div>
+        <!-- SQL Exploratory Data Analysis -->
+        <a class="group" href="https://github.com/talhaid/sql-exploratory-data-analysis" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.6s;">
 
-  </div>
-</a>
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="SQL Exploratory Data Analysis" src="../assets/img/sql-eda.webp" width="400" height="260"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-<!--Amazon Web Scraper with Python-->
-<a class="group" href="https://github.com/talhaid/amazon-web-scraper" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  SQL Exploratory Data Analysis
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  GROUP BY, aggregations and trends on structured data.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline"></span>
+              </div>
+            </div>
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Amazon Web Scraper"
-        src="../assets/img/amazon-web-scraper.png"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+          </div>
+        </a>
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Amazon Web Scraper
-        </h2>
-        <p class="text-sm text-neutral-400">
-          A Python web scraping project that collects product data from Amazon.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        
-        </span>
-      </div>
-    </div>
+        <!--Amazon Web Scraper with Python-->
+        <a class="group" href="https://github.com/talhaid/amazon-web-scraper" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.8s;">
 
-  </div>
-</a>
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Amazon Web Scraper" src="../assets/img/amazon-web-scraper.png" width="400" height="260"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-<!--Crypto Data API Automation with Python-->
-<a class="group" href="https://github.com/talhaid/amazon-web-scraper" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Amazon Web Scraper
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  A Python web scraping project that collects product data from Amazon.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Crypto Data API Automation with Python"
-        src="../assets/img/crypto-data-api-automation.png"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+                </span>
+              </div>
+            </div>
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Crypto Data API Automation
-        </h2>
-        <p class="text-sm text-neutral-400">
-          Python script that automatically fetches and structures crypto data via API.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        
-        </span>
-      </div>
-    </div>
+          </div>
+        </a>
 
-  </div>
-</a>
+        <!--Crypto Data API Automation with Python-->
+        <a class="group" href="https://github.com/talhaid/amazon-web-scraper" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.8s;">
 
-<!-- SQL Data Cleaning -->
-<a class="group" href="https://github.com/talhaid/sql-data-cleaning" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.4s;">
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Crypto Data API Automation with Python" src="../assets/img/crypto-data-api-automation.png"
+                width="400" height="260" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="SQL Data Cleaning"
-        src="../assets/img/sql-cleaning.webp"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Crypto Data API Automation
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  Python script that automatically fetches and structures crypto data via API.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
 
-    <!-- İçerik -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          SQL Data Cleaning
-        </h2>
-        <p class="text-sm text-neutral-400">
-          Cleaning NULLs, fixing formats and duplicates.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-      
-        </span>
-      </div>
-    </div>
+                </span>
+              </div>
+            </div>
 
-  </div>
-</a>
+          </div>
+        </a>
 
-<!-- Airbnb Dashboard in Tableau -->
-<a class="group" href="https://github.com/talhaid/airbnb-tableau-dashboard" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+        <!-- SQL Data Cleaning -->
+        <a class="group" href="https://github.com/talhaid/sql-data-cleaning" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.4s;">
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Airbnb Dashboard in Tableau"
-        src="../assets/img/tableau-airbnb.webp"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="SQL Data Cleaning" src="../assets/img/sql-cleaning.webp" width="400" height="260" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Airbnb Dashboard in Tableau
-        </h2>
-        <p class="text-sm text-neutral-400">
-          Analyzing listings by location, price and availability.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        
-        </span>
-      </div>
-    </div>
+            <!-- İçerik -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  SQL Data Cleaning
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  Cleaning NULLs, fixing formats and duplicates.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
 
-  </div>
-</a>
+                </span>
+              </div>
+            </div>
 
-<!--Power BI Survey Dashboard-->
-<a class="group" href="https://github.com/talhaid/data-professional-survey-powerbi" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+          </div>
+        </a>
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Power BI Survey Dashboard"
-        src="../assets/img/powerbi-survey-dashboard.png"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+        <!-- Airbnb Dashboard in Tableau -->
+        <a class="group" href="https://github.com/talhaid/airbnb-tableau-dashboard" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.8s;">
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Power BI Survey Dashboard
-        </h2>
-        <p class="text-sm text-neutral-400">
-          Interactive Power BI dashboard project analyzing survey responses.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        
-        </span>
-      </div>
-    </div>
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Airbnb Dashboard in Tableau" src="../assets/img/tableau-airbnb.webp" width="400" height="260"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
 
-  </div>
-</a>
-<!--Personal Portfolio Website-->
-<a class="group" href="https://github.com/talhaid/talhaid.github.io" target="_blank">
-  <div class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]" style="animation-delay: 0.8s;">
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Airbnb Dashboard in Tableau
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  Analyzing listings by location, price and availability.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
 
-    <!-- Görsel -->
-    <div class="h-[75%] w-full">
-      <img
-        alt="Personal Portfolio Website"
-        src="../assets/img/portfolio-website.png"
-        width="400"
-        height="260"
-        loading="lazy"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-    </div>
+                </span>
+              </div>
+            </div>
 
-    <!-- Açıklama -->
-    <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
-      <div>
-        <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
-          Personal Portfolio Website
-        </h2>
-        <p class="text-sm text-neutral-400">
-          You are here.
-        </p>
-      </div>
-      <div class="flex justify-end">
-        <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
-        
-        </span>
+          </div>
+        </a>
+
+        <!--Power BI Survey Dashboard-->
+        <a class="group" href="https://github.com/talhaid/data-professional-survey-powerbi" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.8s;">
+
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Power BI Survey Dashboard" src="../assets/img/powerbi-survey-dashboard.png" width="400"
+                height="260" loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Power BI Survey Dashboard
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  Interactive Power BI dashboard project analyzing survey responses.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </a>
+        <!--Personal Portfolio Website-->
+        <a class="group" href="https://github.com/talhaid/talhaid.github.io" target="_blank">
+          <div
+            class="flex flex-col h-[350px] w-full rounded-sm overflow-hidden shadow-md animate-slideUp hover:translate-y-[-4px] transition-transform opacity-0 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl group-hover:translate-y-[-4px]"
+            style="animation-delay: 0.8s;">
+
+            <!-- Görsel -->
+            <div class="h-[75%] w-full">
+              <img alt="Personal Portfolio Website" src="../assets/img/portfolio-website.png" width="400" height="260"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+
+            <!-- Açıklama -->
+            <div class="p-3 h-[25%] flex flex-col justify-between bg-black/30 backdrop-blur-md">
+              <div>
+                <h2 class="text-base font-bold mb-1 transition text-neutral-300 group-hover:text-neutral-300">
+                  Personal Portfolio Website
+                </h2>
+                <p class="text-sm text-neutral-400">
+                  You are here.
+                </p>
+              </div>
+              <div class="flex justify-end">
+                <span class="text-neutral-400 text-xs group-hover:text-white group-hover:underline">
+
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </a>
       </div>
     </div>
+  </main>
+  <!-- Footer -->
+  <!-- Page transition script -->
+  <footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
+    talhaid
+  </footer>
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const openBtn = document.getElementById('hamburger-btn');
+    const closeBtn = document.getElementById('menu-close-btn');
 
-  </div>
-</a>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<!-- Page transition script -->
-<footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
-  © 2025 Talha İsmail Dilek. All rights reserved.
-</footer>
-<script>
-  const menu = document.getElementById('mobile-menu');
-  const openBtn = document.getElementById('hamburger-btn');
-  const closeBtn = document.getElementById('menu-close-btn'); 
-
-  function toggleMenu() {
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-      setTimeout(() => {
-        menu.classList.remove('translate-x-full');
-      }, 10);
-    } else {
-      menu.classList.add('translate-x-full');
-      setTimeout(() => {
-        menu.classList.add('hidden');
-      }, 300);
+    function toggleMenu() {
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        setTimeout(() => {
+          menu.classList.remove('translate-x-full');
+        }, 10);
+      } else {
+        menu.classList.add('translate-x-full');
+        setTimeout(() => {
+          menu.classList.add('hidden');
+        }, 300);
+      }
     }
-  }
 
-  openBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu); 
-</script>
+    openBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu); 
+  </script>
 </body>
+
 </html>

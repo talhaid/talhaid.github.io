@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="preload"/><link as="script" href="https://cdn.tailwindcss.com" rel="preload"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio | Talha İsmail Dilek</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<style>
-        body { font-family: 'Inter', sans-serif; }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
-        .animate-slideUp { animation: slideUp 0.6s ease-out forwards; }
-        .typing-effect::after {
-            content: '|';
-            animation: cursor 1s infinite step-end;
-        }
-        @keyframes cursor {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-        * {
-            transition-property: background-color, border-color, color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 300ms;
-        }
-    </style>
-<meta name="description" content="Portfolio of a data-focused Information Systems Engineering student." />
-<link rel="icon" href="assets/img/favicon.ico" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
-<meta property="og:title" content="Portfolio | Talha İsmail Dilek" />
-<meta property="og:description" content="Portfolio of a data-focused Information Systems Engineering student." />
-<!-- <meta property="og:image" content="..." /> -->
-<meta property="og:url" content="https://talhaid.me/" />
-<!-- <meta name="twitter:image" content="..." /> -->
-<meta name="theme-color" content="#0d0d0d" />
-<link rel="manifest" href="/manifest.json" />
+
+<head>
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap"
+    rel="preload" />
+  <link as="script" href="https://cdn.tailwindcss.com" rel="preload" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Portfolio | Talha İsmail Dilek</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-slideUp {
+      animation: slideUp 0.6s ease-out forwards;
+    }
+
+    .typing-effect::after {
+      content: '|';
+      animation: cursor 1s infinite step-end;
+    }
+
+    @keyframes cursor {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    * {
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
+  </style>
+  <meta name="description" content="Portfolio of a data-focused Information Systems Engineering student." />
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
+  <meta property="og:title" content="Portfolio | Talha İsmail Dilek" />
+  <meta property="og:description" content="Portfolio of a data-focused Information Systems Engineering student." />
+  <!-- <meta property="og:image" content="..." /> -->
+  <meta property="og:url" content="https://talhaid.me/" />
+  <!-- <meta name="twitter:image" content="..." /> -->
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="manifest" href="/manifest.json" />
 </head>
+
 <body class="bg-[#0d0d0d] text-neutral-300 min-h-screen flex flex-col">
 
 
-<!-- Professional Navigation -->
-<header role="banner"><nav class="w-full text-sm py-4">
-<div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
-<!-- Sol Logo -->
-<div class="flex-1">
-<a class="text-neutral-300 text-[15px] tracking-wide" href="/" style="font-family: 'Inter', sans-serif;">talhaid</a>
-</div>
-<!-- Sağ Sosyal İkonlar -->
-<div class="hidden md:flex flex-1 justify-end items-center space-x-4">
-<a aria-label="GitHub" class="text-white/70 hover:text-white transition" href="https://github.com/talhaid" target="_blank">
-<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
-<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
+  <!-- Professional Navigation -->
+  <header role="banner">
+    <nav class="w-full text-sm py-4">
+      <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between">
+        <!-- Sol Logo -->
+        <div class="flex-1">
+          <a class="text-neutral-300 text-[15px] tracking-wide" href="/"
+            style="font-family: 'Inter', sans-serif;">talhaid</a>
+        </div>
+        <!-- Sağ Sosyal İkonlar -->
+        <div class="hidden md:flex flex-1 justify-end items-center space-x-4">
+          <a aria-label="GitHub" class="text-white/70 hover:text-white transition" href="https://github.com/talhaid"
+            target="_blank">
+            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+              <path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
                  2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
                  c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47
                  -1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 
@@ -73,11 +115,12 @@
                  4.91.36.31.69.92.69 1.85V21c0 
                  .27.16.59.67.5C19.14 20.16 22 16.42 
                  22 12A10 10 0 0012 2z" fill-rule="evenodd"></path>
-</svg>
-</a>
-<a aria-label="LinkedIn" class="text-white/70 hover:text-white transition" href="https://linkedin.com/in/talhaid" target="_blank">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-<path d="M19 0h-14c-2.76 0-5 2.24-5 
+            </svg>
+          </a>
+          <a aria-label="LinkedIn" class="text-white/70 hover:text-white transition"
+            href="https://linkedin.com/in/talhaid" target="_blank">
+            <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+              <path d="M19 0h-14c-2.76 0-5 2.24-5 
                      5v14c0 2.76 2.24 5 5 5h14c2.76 
                      0 5-2.24 5-5v-14c0-2.76-2.24
                      -5-5-5zm-11 19h-3v-11h3v11zm
@@ -88,58 +131,58 @@
                      12.27h-3v-5.6c0-3.37-4-3.11
                      -4 0v5.6h-3v-11h3v1.77c1.4
                      -2.59 7-2.78 7 2.48v6.75z"></path>
-</svg>
-</a>
-<a aria-label="Gmail" class="text-white/70 hover:text-white transition" href="mailto:t.ismaildilek@gmail.com">
-<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+            </svg>
+          </a>
+          <a aria-label="Gmail" class="text-white/70 hover:text-white transition" href="mailto:t.ismaildilek@gmail.com">
+            <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
                      1.1.9 2 2 2h16c1.1 0 2-.9 
                      2-2V6c0-1.1-.9-2-2-2zm0 
                      4l-8 5-8-5V6l8 5 8-5v2z"></path>
-</svg>
-</a>
-</div>
+            </svg>
+          </a>
+        </div>
 
- <div class="md:hidden">
+        <div class="md:hidden">
 
-      <!-- Sağ: Hamburger Menü (mobilde) -->
-      <button id="hamburger-btn" class="md:hidden text-white p-1 hover:bg-white/10 rounded transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-</div>
-
-
-<!-- Slide-in Menü (mobil) -->
-<div id="mobile-menu"
-  class="fixed top-0 right-0 h-full w-1/2 max-w-xs bg-[#0d0d0d]/90 backdrop-blur-md z-40 hidden flex flex-col pt-4 space-y-6 text-sm uppercase transition-transform duration-300 translate-x-full shadow-lg">
+          <!-- Sağ: Hamburger Menü (mobilde) -->
+          <button id="hamburger-btn" class="md:hidden text-white p-1 hover:bg-white/10 rounded transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
 
 
-  <!-- Menü içi sol üst ☰ (kapatma butonu) -->
-  <div class="flex items-center pl-2">
-    <button id="menu-close-btn" class="text-white p-1 hover:bg-white/10 rounded transition">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
+        <!-- Slide-in Menü (mobil) -->
+        <div id="mobile-menu"
+          class="fixed top-0 right-0 h-full w-1/2 max-w-xs bg-[#0d0d0d]/90 backdrop-blur-md z-40 hidden flex flex-col pt-4 space-y-6 text-sm uppercase transition-transform duration-300 translate-x-full shadow-lg">
 
-  <!-- Menü Linkleri -->
-   <div class="flex flex-col space-y-4">
-    <a href="/about/" class="pl-3 hover:text-white transition">About</a>
-    <a href="/projects/" class="pl-3 hover:text-white transition">Projects</a>
-    <a href="/skills/" class="pl-3 hover:text-white transition">Skills</a>
-    <a href="/contact/" class="pl-3 hover:text-white transition">Contact</a>
-  </div>
 
-<!-- Sosyal ikonlar - sola hizalı, yatay (yan yana) -->
-<div class="flex justify-start items-center space-x-4 pl-3 mt-6">
-  <!-- GitHub -->
-  <a href="https://github.com/talhaid" target="_blank" aria-label="GitHub" class="text-white/70 hover:text-white transition">
-    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
+          <!-- Menü içi sol üst ☰ (kapatma butonu) -->
+          <div class="flex items-center pl-2">
+            <button id="menu-close-btn" class="text-white p-1 hover:bg-white/10 rounded transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menü Linkleri -->
+          <div class="flex flex-col space-y-4">
+            <a href="/about/" class="pl-3 hover:text-white transition">About</a>
+            <a href="/projects/" class="pl-3 hover:text-white transition">Projects</a>
+            <a href="/skills/" class="pl-3 hover:text-white transition">Skills</a>
+            <a href="/contact/" class="pl-3 hover:text-white transition">Contact</a>
+          </div>
+
+          <!-- Sosyal ikonlar - sola hizalı, yatay (yan yana) -->
+          <div class="flex justify-start items-center space-x-4 pl-3 mt-6">
+            <!-- GitHub -->
+            <a href="https://github.com/talhaid" target="_blank" aria-label="GitHub"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
         2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
         c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47
         -1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 
@@ -153,14 +196,14 @@
         4.91.36.31.69.92.69 1.85V21c0 
         .27.16.59.67.5C19.14 20.16 22 16.42 
         22 12A10 10 0 0012 2z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-  <!-- LinkedIn -->
-  <a href="https://linkedin.com/in/talhaid" target="_blank" aria-label="LinkedIn" class="text-white/70 hover:text-white transition">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path
-        d="M19 0h-14c-2.76 0-5 2.24-5 
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/talhaid" target="_blank" aria-label="LinkedIn"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 
         5v14c0 2.76 2.24 5 5 5h14c2.76 
         0 5-2.24 5-5v-14c0-2.76-2.24
         -5-5-5zm-11 19h-3v-11h3v11zm
@@ -171,101 +214,113 @@
         12.27h-3v-5.6c0-3.37-4-3.11
         -4 0v5.6h-3v-11h3v1.77c1.4
         -2.59 7-2.78 7 2.48v6.75z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-  <!-- Gmail -->
-  <a href="mailto:t.ismaildilek@gmail.com" aria-label="Mail" class="text-white/70 hover:text-white transition">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path
-        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+            <!-- Gmail -->
+            <a href="mailto:t.ismaildilek@gmail.com" aria-label="Mail"
+              class="text-white/70 hover:text-white transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
         1.1.9 2 2 2h16c1.1 0 2-.9 
         2-2V6c0-1.1-.9-2-2-2zm0 
         4l-8 5-8-5V6l8 5 8-5v2z" />
-    </svg>
-  </a>
+              </svg>
+            </a>
 
-</div>
-</div>
-</div>
-</div>
-</nav>
-</header>
-<main class="flex-1 flex flex-col justify-center min-h-screen" id="main" role="main">
-<!-- Hero Section -->
-<section class="flex flex-col items-center justify-center pt-28 pb-10">
-<div class="max-w-screen-md mx-auto px-6 py-4 flex flex-col items-center text-center space-y-3"> <h1 class="text-4xl md:text-5xl font-bold mb-2 opacity-0 animate-fadeInUp text-neutral-300" style="animation-delay: 0.2s;">Talha İsmail Dilek</h1>
-<h2 class="text-xl md:text-2xl text-neutral-300 mb-2 font-light tracking-wide opacity-0 animate-fadeInUp typing-effect" id="typewriter" style="animation-delay: 0.4s;"></h2>
-<p class="max-w-xl text-lg text-neutral-300 mb-2 font-light tracking-wide leading-relaxed opacity-0 animate-fadeInUp" style="animation-delay: 0.6s;">
-                    3rd-year student in Information Systems Engineering. Focused on data analysis, artificial intelligence, 
-                    distributed systems.
-                </p>
-</div>
-</section>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-1 flex flex-col justify-center min-h-screen" id="main" role="main">
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center pt-28 pb-10">
+      <div class="max-w-screen-md mx-auto px-6 py-4 flex flex-col items-center text-center space-y-3">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2 opacity-0 animate-fadeInUp text-neutral-300"
+          style="animation-delay: 0.2s;">Talha İsmail Dilek</h1>
+        <h2
+          class="text-xl md:text-2xl text-neutral-300 mb-2 font-light tracking-wide opacity-0 animate-fadeInUp typing-effect"
+          id="typewriter" style="animation-delay: 0.4s;"></h2>
+        <p class="max-w-xl text-lg text-neutral-300 mb-2 font-light tracking-wide leading-relaxed opacity-0 animate-fadeInUp"
+          style="animation-delay: 0.6s;">
+          4th-year student in Information Systems Engineering. Focused on data analysis, artificial intelligence,
+          distributed systems.
+        </p>
+      </div>
+    </section>
 
-<!-- Navigation Boxes -->
-<section class="mt-auto mb-4"> <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-700 gap-0 p-0">
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/about/" style="animation-delay: 0.8s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">About</span>
-</a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/projects/" style="animation-delay: 1.0s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Projects</span>
-</a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/skills/" style="animation-delay: 1.2s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Skills</span>
-</a>
-<a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300" href="/contact/" style="animation-delay: 1.4s;">
-<span class="text-2xl font-semibold uppercase tracking-wider">Contact</span>
-</a>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<!-- Typing effect --> <script>
-      window.addEventListener('load', function () {
-        // Typing effect
+    <!-- Navigation Boxes -->
+    <section class="mt-auto mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-700 gap-0 p-0">
+        <a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300"
+          href="/about/" style="animation-delay: 0.8s;">
+          <span class="text-2xl font-semibold uppercase tracking-wider">About</span>
+        </a>
+        <a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300"
+          href="/projects/" style="animation-delay: 1.0s;">
+          <span class="text-2xl font-semibold uppercase tracking-wider">Projects</span>
+        </a>
+        <a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300"
+          href="/skills/" style="animation-delay: 1.2s;">
+          <span class="text-2xl font-semibold uppercase tracking-wider">Skills</span>
+        </a>
+        <a class="h-[300px] flex justify-center items-center hover:bg-gray-700 hover:scale-105 hover:shadow-md transition-all duration-300 px-4 py-6 opacity-0 animate-slideUp text-neutral-300"
+          href="/contact/" style="animation-delay: 1.4s;">
+          <span class="text-2xl font-semibold uppercase tracking-wider">Contact</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <!-- Typing effect -->
+  <script>
+    window.addEventListener('load', function () {
+      // Typing effect
+      setTimeout(() => {
+        const typewriterElement = document.getElementById('typewriter');
+        const text = "Information Systems Engineering Student";
+        let charIndex = 0;
+
+        function typeWriter() {
+          if (charIndex < text.length) {
+            typewriterElement.textContent += text.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeWriter, 45);
+          } else {
+            // Remove the typing-effect class when typing is complete
+            typewriterElement.classList.remove('typing-effect');
+          }
+        }
+
+        setTimeout(typeWriter, 500);
+      }, 400);
+    });
+  </script>
+
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const openBtn = document.getElementById('hamburger-btn');
+    const closeBtn = document.getElementById('menu-close-btn');
+
+    function toggleMenu() {
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
         setTimeout(() => {
-            const typewriterElement = document.getElementById('typewriter');
-            const text = "Information Systems Engineering Student";
-            let charIndex = 0;
-
-            function typeWriter() {
-                if (charIndex < text.length) {
-                    typewriterElement.textContent += text.charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typeWriter, 45);
-                } else {
-                    // Remove the typing-effect class when typing is complete
-                    typewriterElement.classList.remove('typing-effect');
-                }
-            }
-
-            setTimeout(typeWriter, 500);
-        }, 400);
-      });
-    </script>
-
-    <script>
-  const menu = document.getElementById('mobile-menu');
-  const openBtn = document.getElementById('hamburger-btn');
-  const closeBtn = document.getElementById('menu-close-btn');
-
-  function toggleMenu() {
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-      setTimeout(() => {
-        menu.classList.remove('translate-x-full');
-      }, 10);
-    } else {
-      menu.classList.add('translate-x-full');
-      setTimeout(() => {
-        menu.classList.add('hidden');
-      }, 300);
+          menu.classList.remove('translate-x-full');
+        }, 10);
+      } else {
+        menu.classList.add('translate-x-full');
+        setTimeout(() => {
+          menu.classList.add('hidden');
+        }, 300);
+      }
     }
-  }
 
-  openBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu);
-</script>
+    openBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+  </script>
 </body>
+
 </html>
