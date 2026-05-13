@@ -1,4 +1,4 @@
-# talhaid.me – Personal Portfolio Website
+# talhaid.tech – Personal Portfolio Website
 
 Welcome to my personal portfolio website.
 I’m a fourth-year Information Systems Engineering student focused on analytics, data science, distributed systems, and AI/ML.
@@ -7,7 +7,7 @@ This website showcases my projects, skills, and contact information.
 
 ## 🔗 Live Website
 
-[Visit talhaid.me](https://talhaid.me)
+[Visit talhaid.tech](https://talhaid.tech)
 
 ## 🛠️ Built With
 
@@ -30,7 +30,7 @@ Feel free to connect with me on:
 
 - [GitHub](https://github.com/talhaid)
 - [LinkedIn](https://linkedin.com/in/talhaid)
-- [Portfolio Website](https://talhaid.me)
+- [Portfolio Website](https://talhaid.tech)
 
 ---
 
