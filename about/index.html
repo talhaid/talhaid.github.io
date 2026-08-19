@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -75,7 +76,6 @@
     </style>
     <meta name="description" content="Data-focused Information Systems Engineering student." />
     <link rel="icon" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" />
     <meta property="og:title" content="About | Talha İsmail Dilek" />
     <meta property="og:description" content="Data-focused Information Systems Engineering student." />
     <!-- <meta property="og:image" content="..." /> -->
@@ -240,80 +240,58 @@
             </div>
             </div>
         </nav>
+      </header>
         <!-- About Section -->
-        <main class="relative z-10 flex-1 mt-10">
-            <div class="max-w-screen-lg mx-auto px-6 py-12 space-y-12">
-                <!-- About Me -->
-                <section class="opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;">
-                    <h1 class="text-3xl font-bold mb-6">About Me</h1>
-                    <div class="space-y-4 text-gray-300 text-lg">
-                        <p>I’m a fourth-year Information Systems Engineering student focused on analytics, data science,
-                            and
-                            distributed systems. My focus is on extracting insights from data, solving real-world
-                            problems, and
-                            delivering value through data-driven thinking.</p>
-                        <p>I have hands-on experience with SQL, Python (Pandas, NumPy), Excel, Power BI, Tableau, and
-                            cloud
-                            platforms like Azure and AWS. My projects involve data cleaning, transformation, and
-                            visualization.</p>
-                        <p>Currently, I'm exploring distributed systems and AI/ML to broaden my understanding of
-                            scalable,
-                            intelligent solutions. I'm open to internship opportunities where I can contribute, grow,
-                            and apply my
-                            skills to real-world data projects.</p>
-                    </div>
-                </section>
+        <main class="relative z-10 flex-1 flex items-center">
+            <div class="w-full max-w-screen-lg mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-start">
 
-                <!-- Experience Section -->
-                <section class="opacity-0 animate-fadeInUp" style="animation-delay: 0.15s;">
-                    <h2 class="text-2xl font-bold mb-6 text-white">Experience</h2>
-                    <div class="space-y-8">
-                        <!-- Job 1 -->
-                        <div class="relative pl-6 border-l border-gray-700">
-                            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-600"></div>
-                            <h3 class="text-xl font-semibold text-white">Data Analyst</h3>
-                            <p class="text-gray-400 text-sm mb-2">acsport Football Services • Sep 2025 - Present</p>
-                            <p class="text-gray-400 text-sm mb-2">Düsseldorf, North Rhine-Westphalia, Germany</p>
+                    <!-- About Me -->
+                    <section class="md:col-span-3 opacity-0 animate-fadeInUp" style="animation-delay: 0.1s;">
+                        <h1 class="text-3xl font-bold mb-6">About Me</h1>
+                        <div class="space-y-4 text-gray-300 text-lg">
+                            <p>I’m a fourth-year Information Systems Engineering student focused on analytics, data
+                                science, and distributed systems. My focus is on extracting insights from data, solving
+                                real-world problems, and delivering value through data-driven thinking.</p>
+                            <p>I have hands-on experience with SQL, Python (Pandas, NumPy), Excel, Power BI, Tableau, and
+                                cloud platforms like Azure and AWS. My projects involve data cleaning, transformation,
+                                and visualization.</p>
+                            <p>Currently, I'm exploring distributed systems and AI/ML to broaden my understanding of
+                                scalable, intelligent solutions. I'm open to internship opportunities where I can
+                                contribute, grow, and apply my skills to real-world data projects.</p>
                         </div>
-                        <!-- Job 2 -->
-                        <div class="relative pl-6 border-l border-gray-700">
-                            <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-600"></div>
-                            <h3 class="text-xl font-semibold text-white">IoT Data Intern</h3>
-                            <p class="text-gray-400 text-sm mb-2">MicroZerr • Jun 2025 - Sep 2025</p>
-                            <p class="text-gray-400 text-sm mb-2">Ankara, Türkiye</p>
-                        </div>
-                    </div>
-                </section>
 
-                <!-- Info Grid -->
-                <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-300 opacity-0 animate-fadeInUp"
-                    style="animation-delay: 0.2s;">
-                    <div class="bg-[#2a2a2a] p-4 rounded-xl shadow">
-                        <h2 class="text-white font-semibold mb-2">📍 Location</h2>
-                        <p>Antalya, Türkiye</p>
-                    </div>
-                    <div class="bg-[#2a2a2a] p-4 rounded-xl shadow">
-                        <h2 class="text-white font-semibold mb-2">🎓 Education</h2>
-                        <p>B.Sc. in Information Systems Engineering</p>
-                        <p>Mehmet Akif Ersoy University</p>
-                        <p>2022 - 2026</p>
-                    </div>
-                    <div class="bg-[#2a2a2a] p-4 rounded-xl shadow">
-                        <h2 class="text-white font-semibold mb-2">💬 Languages</h2>
-                        <p>Turkish — Native</p>
-                        <p>English — Fluent</p>
-                    </div>
-                </section>
-                <!-- Download CV -->
-                <section class="opacity-0 animate-fadeInUp" style="animation-delay: 0.3s;">
-                    <a class="inline-block bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium px-6 py-2 rounded transition"
-                        href="/assets/cv/talha-ismail-dilek-cv.pdf" rel="noopener noreferrer" target="_blank">
-                        📄CV
-                    </a>
-                </section>
+                        <!-- Download CV -->
+                        <div class="mt-8 flex flex-wrap items-center gap-4">
+                            <a class="inline-block bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium px-6 py-2 rounded transition"
+                                href="/assets/cv/talha-ismail-dilek-cv.pdf" rel="noopener noreferrer" target="_blank">
+                                📄 CV
+                            </a>
+                            <a class="inline-block border border-gray-600 hover:border-gray-400 hover:text-white text-gray-300 text-sm font-medium px-6 py-2 rounded transition"
+                                href="/projects/">
+                                View Projects
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Experience -->
+                    <section class="md:col-span-2 opacity-0 animate-fadeInUp md:border-l md:border-white/10 md:pl-10"
+                        style="animation-delay: 0.25s;">
+                        <h2 class="text-2xl font-bold mb-6 text-white">Experience</h2>
+                        <div class="space-y-8">
+                            <div class="relative pl-6 border-l border-gray-700">
+                                <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-600"></div>
+                                <h3 class="text-xl font-semibold text-white">IoT Data Intern</h3>
+                                <p class="text-gray-400 text-sm mb-2">MicroZerr • Jun 2025 - Sep 2025</p>
+                                <p class="text-gray-400 text-sm mb-2">Ankara, Türkiye</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
             </div>
         </main>
-        <footer class="mt-24 pt-6 text-center text-xs text-white/30 border-t border-white/10">
+        <footer class="mt-12 pt-6 text-center text-xs text-white/30 border-t border-white/10">
             talhaid
         </footer>
         <script>
