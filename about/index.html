@@ -4,12 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>About | Talha İsmail Dilek</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <style>
+<style>
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -75,14 +73,18 @@
         }
     </style>
     <meta name="description" content="Data-focused Information Systems Engineering student." />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="icon" href="/assets/img/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
     <meta property="og:title" content="About | Talha İsmail Dilek" />
     <meta property="og:description" content="Data-focused Information Systems Engineering student." />
     <!-- <meta property="og:image" content="..." /> -->
-    <meta property="og:url" content="https://talhaid.me/about/" />
+    <meta property="og:url" content="https://talhaid.tech/about/" />
     <!-- <meta name="twitter:image" content="..." /> -->
     <meta name="theme-color" content="#0d0d0d" />
     <link rel="manifest" href="/manifest.json" />
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/site.js" defer></script>
 </head>
 
 <body class="bg-[#0d0d0d] text-gray-100 min-h-screen flex flex-col">
@@ -105,7 +107,7 @@
                 <!-- Sağ Sosyal İkonlar -->
                 <div class="hidden md:flex flex-1 justify-end items-center space-x-4">
                     <a aria-label="GitHub" class="text-white/70 hover:text-white transition"
-                        href="https://github.com/talhaid" target="_blank">
+                        href="https://github.com/talhaid" target="_blank" rel="noopener noreferrer">
                         <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
                             <path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
                  2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69
@@ -124,7 +126,7 @@
                         </svg>
                     </a>
                     <a aria-label="LinkedIn" class="text-white/70 hover:text-white transition"
-                        href="https://linkedin.com/in/talhaid" target="_blank">
+                        href="https://linkedin.com/in/talhaid" target="_blank" rel="noopener noreferrer">
                         <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
                             <path d="M19 0h-14c-2.76 0-5 2.24-5 
                      5v14c0 2.76 2.24 5 5 5h14c2.76 
@@ -186,7 +188,7 @@
                     <!-- Sosyal ikonlar - sola hizalı, yatay (yan yana) -->
                     <div class="flex justify-start items-center space-x-4 pl-3 mt-6">
                         <!-- GitHub -->
-                        <a href="https://github.com/talhaid" target="_blank" aria-label="GitHub"
+                        <a href="https://github.com/talhaid" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                             class="text-white/70 hover:text-white transition">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 
@@ -207,7 +209,7 @@
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://linkedin.com/in/talhaid" target="_blank" aria-label="LinkedIn"
+                        <a href="https://linkedin.com/in/talhaid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                             class="text-white/70 hover:text-white transition">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.76 0-5 2.24-5 
@@ -294,26 +296,6 @@
         <footer class="mt-12 pt-6 text-center text-xs text-white/30 border-t border-white/10">
             talhaid
         </footer>
-        <script>
-            const menu = document.getElementById('mobile-menu');
-            const openBtn = document.getElementById('hamburger-btn');
-            const closeBtn = document.getElementById('menu-close-btn');
-            function toggleMenu() {
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    setTimeout(() => {
-                        menu.classList.remove('translate-x-full');
-                    }, 10);
-                } else {
-                    menu.classList.add('translate-x-full');
-                    setTimeout(() => {
-                        menu.classList.add('hidden');
-                    }, 300);
-                }
-            }
-            openBtn.addEventListener('click', toggleMenu);
-            closeBtn.addEventListener('click', toggleMenu); 
-        </script>
 </body>
 
 </html>
