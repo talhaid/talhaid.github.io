@@ -1,4 +1,4 @@
-// Shared site behaviour: mobile menu + hero typewriter.
+// Shared site behaviour: mobile menu.
 // Kept in one external file so the pages can run under a strict
 // Content-Security-Policy (script-src 'self') with no inline scripts.
 
@@ -30,24 +30,5 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', toggleMenu);
     });
-  }
-
-  // Hero typing effect (home page only)
-  const typewriterElement = document.getElementById('typewriter');
-  if (typewriterElement) {
-    const text = 'Information Systems Engineering Student';
-    let charIndex = 0;
-
-    const typeWriter = function () {
-      if (charIndex < text.length) {
-        typewriterElement.textContent += text.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, 45);
-      } else {
-        typewriterElement.classList.remove('typing-effect');
-      }
-    };
-
-    setTimeout(typeWriter, 900);
   }
 });
